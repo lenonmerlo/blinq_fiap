@@ -49,7 +49,7 @@ O projeto segue todas as regras do desafio:
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **Lenon Otmar Tonoli Merlo** – estudante de Ciência de Dados e apaixonado por tecnologia financeira.
+Desenvolvido por **Lenon Otmar Tonoli Merlo** – estudante de Ciência de Dados e Análise e Desenvolvimento de Sistemas.
 
 ---
 © 2025 Blinq. Todos os direitos reservados.
