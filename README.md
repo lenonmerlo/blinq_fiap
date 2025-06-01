@@ -1,55 +1,57 @@
 # 💳 Blinq - Fintech Dashboard
 
-Este projeto foi desenvolvido como parte do desafio da Fase 4 do curso de Desenvolvimento Web com foco em HTML, CSS e Bootstrap.
+Este projeto foi desenvolvido como parte do desafio da Fase 4 do curso de Desenvolvimento Web da FIAP, com foco em **HTML, CSS e TailwindCSS**.
 
 ## 🖥️ Descrição
 
-A tela representa o **painel inicial (dashboard)** de uma Fintech fictícia chamada **Blinq**, onde o usuário pode visualizar um resumo financeiro com:
+A tela representa o painel inicial (dashboard) de uma Fintech fictícia chamada **Blinq**, onde o usuário pode visualizar seu resumo financeiro por meio de uma interface clara, moderna e responsiva. A interface inclui:
 
-- 💰 Saldo total
+- 💰 Saldo Total
 - 📥 Entradas
 - 📤 Saídas
-- 💳 Cartões de crédito
+- 💳 Cartões de Crédito
 - 📈 Investimentos
-- 📆 Último acesso e mensagem de boas-vindas
+- 📋 Detalhes de Transações
+- 👤 Saudação personalizada e data do último acesso
 
 ## ⚙️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- [Bootstrap 5](https://getbootstrap.com/)
-- Responsividade garantida com grid system
+- HTML5  
+- CSS3  
+- [TailwindCSS (via CDN)](https://tailwindcss.com/docs/installation/play-cdn)
 
-## 📂 Estrutura
+## 📂 Estrutura de Arquivos
 
 ```
 .
 ├── index.html
 ├── styles.css
 └── assets/
-    └── logo.png
+    └── logo_light.png
 ```
 
 ## 🎯 Objetivo
 
-Recriar uma das telas do protótipo desenvolvido na fase anterior utilizando apenas **HTML, CSS e um framework web (Bootstrap)**.  
-O projeto segue todas as regras do desafio:
+Recriar uma das telas do protótipo desenvolvido na fase anterior utilizando HTML, CSS e um framework web (TailwindCSS). O projeto segue todas as regras da atividade:
 
 - ✅ HTML e CSS em arquivos separados  
 - ✅ Layout responsivo  
-- ✅ Sem JavaScript  
-- ✅ Design limpo e moderno  
-- ✅ Projeto funcional ao abrir o arquivo `index.html`
+- ✅ Sem uso de JavaScript  
+- ✅ Design visual limpo e profissional  
+- ✅ Funcionamento garantido ao abrir o arquivo `index.html`
 
-## 🚀 Como visualizar
+## 🚀 Como Visualizar
 
 1. Clone ou baixe este repositório
-2. Abra o arquivo `index.html` no seu navegador
-3. Pronto!
+2. Abra o arquivo `index.html` no seu navegador (duplo clique já basta!)
+3. A logo deve ser exibida corretamente se a pasta `assets/` estiver no mesmo nível
 
-## 🧑‍💻 Autor
+## 👨‍💻 Autor
 
-Desenvolvido por **Lenon Otmar Tonoli Merlo** – estudante de Ciência de Dados e Análise e Desenvolvimento de Sistemas.
+Desenvolvido por **Lenon Otmar Tonoli Merlo**  
+Estudante de Ciência de Dados e Análise e Desenvolvimento de Sistemas – FIAP  
+[GitHub @lenonmerlo](https://github.com/lenonmerlo)
 
 ---
+
 © 2025 Blinq. Todos os direitos reservados.
