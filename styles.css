@@ -1,33 +1,4 @@
+/* styles.css */
 body {
-  padding-top: 120px;
-  background-color: #f8f9fa;
-}
-
-.navbar {
-  border-bottom: 4px solid #17a2b8; /* ciano */
-}
-
-
-.navbar-nav .nav-link {
-  margin-left: 15px;
-  font-weight: 500;
-}
-
-.navbar-brand img {
-  vertical-align: middle;
-}
-
-.destaque {
-  background-color: #ffffffdd;
-  border: 3px solid #e4af12;
-}
-
-.footer {
-  background-color: #0d1b2a;
-  border-top: 4px solid #6f42c1;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
 }

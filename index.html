@@ -1,111 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blinq</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blinq - Resumo Financeiro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="assets/logo_light.png" alt="Logo Blinq" width="120" height="120" class="me-2">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-[#6f42c1] text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+      <!-- Logo alinhada à esquerda -->
+      <img src="assets/logo_light.png" alt="Logo Blinq" class="h-20" />
+
+      <!-- Menu de navegação à direita -->
+      <nav class="space-x-6 text-sm md:text-base">
+        <a href="#" class="hover:text-[#17a2b8]">Início</a>
+        <a href="#" class="hover:text-[#17a2b8]">Contas</a>
+        <a href="#" class="hover:text-[#17a2b8]">Cartões</a>
+        <a href="#" class="hover:text-[#17a2b8]">Investimentos</a>
+        <a href="#" class="hover:text-[#17a2b8]">Transações</a>
+        <a href="#" class="hover:text-[#17a2b8]">Ajuda</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Conteúdo -->
+  <main class="max-w-6xl mx-auto py-12 px-6 space-y-12">
+
+  <!-- Saudação e acesso -->
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+    <p class="text-xl font-medium">Olá, <span class="text-[#6f42c1] font-semibold">Luna</span>. Seja bem-vinda.</p>
+    <p class="text-sm text-gray-500 mt-2 md:mt-0">Último acesso em: 26/05/2025</p>
+  </div>
+
+  <!-- Botão de ação -->
+  <div class="flex justify-end">
+    <button class="bg-[#6f42c1] hover:bg-[#5a36a3] text-white px-4 py-2 rounded-lg shadow">
+      + Nova Transação
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Cartões</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Investimentos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Transações</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Boas-vindas -->
-  <div class="container mt-5 pt-5 d-flex justify-content-between align-items-center">
-    <p class="fs-5 mb-0">Olá, Luna. Seja bem-vinda.</p>
-    <small class="text-muted">Último acesso em: 26/05/2025</small>
   </div>
 
-  <!-- Resumo -->
-  <div class="container mt-3 p-4 rounded shadow-sm destaque">
-    <h2 class="mb-4">Resumo Financeiro</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card border-success shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title text-success">Saldo Total</h5>
-            <p class="card-text fs-4 fw-bold">R$ 12.500,00</p>
-          </div>
-        </div>
+  <!-- Painel de Resumo -->
+  <section class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
+      <p class="text-green-600 font-semibold">Saldo Total</p>
+      <p class="text-3xl font-bold mt-2">R$ 12.500,00</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
+      <p class="text-blue-600 font-semibold">Entradas</p>
+      <p class="text-2xl font-medium mt-2">+ R$ 4.000,00</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
+      <p class="text-red-600 font-semibold">Saídas</p>
+      <p class="text-2xl font-medium mt-2">- R$ 3.500,00</p>
+    </div>
+  </section>
+
+  <!-- Container de Cartão + Investimentos -->
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    <!-- Cartão Estilizado -->
+    <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl shadow-xl p-6 flex flex-col justify-between">
+      <div class="flex justify-between items-center mb-4">
+        <p class="text-lg font-semibold italic">Blinq Black</p>
+        <p class="text-xl font-bold">VISA</p>
       </div>
-      <div class="col-md-4">
-        <div class="card border-primary shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Entradas</h5>
-            <p class="card-text fs-4">+ R$ 4.000,00</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card border-danger shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title text-danger">Saídas</h5>
-            <p class="card-text fs-4">- R$ 3.500,00</p>
-          </div>
-        </div>
-      </div>
+      <div class="text-2xl tracking-widest font-semibold mb-2">● ● ● ● <span class="ml-2">1234</span></div>
+      <p class="text-lg font-semibold tracking-wide">Luna Lovegood Merlo</p>
     </div>
 
-    <div class="row g-4 mt-4">
-      <div class="col-md-6">
-        <div class="card border-dark shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title">Cartão de Crédito</h5>
-            <p class="card-text mb-1">Utilizado: R$ 3.000,00</p>
-            <p class="card-text mb-1">Disponível: R$ 47.000,00</p>
-            <p class="card-text">Limite Total: R$ 50.000,00</p>
-          </div>
-        </div>
+    <!-- Investimentos com destaque -->
+    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#6f42c1] flex flex-col justify-between">
+      <div>
+        <p class="font-semibold text-[#6f42c1] text-lg mb-2">Investimentos</p>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>Total: <span class="text-gray-800 font-medium">R$ 7.300,00</span></li>
+          <li>Rendimento: <span class="text-green-600 font-medium">R$ 247,89</span></li>
+        </ul>
       </div>
-      <div class="col-md-6">
-        <div class="card border-warning shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title text-warning">Investimentos</h5>
-            <p class="card-text">Total: R$ 7.300,00</p>
-            <p class="card-text">Rendimento: R$ 247,89</p>
-          </div>
-        </div>
+      <div class="mt-6">
+        <p class="text-xs text-gray-400">Última atualização: 26/05/2025</p>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer mt-5 py-4 text-white">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <div class="d-flex align-items-center mb-3 mb-md-0">
-        <img src="assets/logo_light.png" alt="Logo Blinq" width="80" class="me-2">
-        
+  <!-- Detalhes de Transações -->
+  <section class="mt-12">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold text-gray-800">📋 Detalhes de Transações</h2>
+      <select class="text-sm border border-gray-300 rounded px-3 py-1 shadow-sm focus:outline-none">
+        <option>Maio/2025</option>
+        <option>Abril/2025</option>
+        <option>Março/2025</option>
+      </select>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 space-y-4">
+      <!-- Transação 1 -->
+      <div class="flex justify-between items-center border-b pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">💰</span>
+          <div>
+            <p class="font-medium text-gray-800">Salário - Empresa X</p>
+            <p class="text-sm text-gray-500">Depósito em conta</p>
+          </div>
+        </div>
+        <p class="text-green-600 font-semibold">+ R$ 4.000,00</p>
       </div>
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item"><a href="#" class="text-white-50">Sobre</a></li>
-        <li class="list-inline-item"><a href="#" class="text-white-50">Contato</a></li>
-        <li class="list-inline-item"><a href="#" class="text-white-50">Política de Privacidade</a></li>
-      </ul>
-      <div class="text-white-50 mt-3 mt-md-0">
-        &copy; 2025 Blinq. Todos os direitos reservados.
+
+      <!-- Transação 2 -->
+      <div class="flex justify-between items-center border-b pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">💳</span>
+          <div>
+            <p class="font-medium text-gray-800">Pagamento Cartão</p>
+            <p class="text-sm text-gray-500">Fatura do mês</p>
+          </div>
+        </div>
+        <p class="text-red-500 font-semibold">- R$ 3.200,00</p>
+      </div>
+
+      <!-- Transação 3 -->
+      <div class="flex justify-between items-center border-b pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">📉</span>
+          <div>
+            <p class="font-medium text-gray-800">Investimento - CDB</p>
+            <p class="text-sm text-gray-500">Aplicação financeira</p>
+          </div>
+        </div>
+        <p class="text-red-500 font-semibold">- R$ 1.000,00</p>
+      </div>
+
+      <!-- Transação 4 -->
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">📈</span>
+          <div>
+            <p class="font-medium text-gray-800">Rendimento CDB</p>
+            <p class="text-sm text-gray-500">Lucro sobre investimento</p>
+          </div>
+        </div>
+        <p class="text-green-600 font-semibold">+ R$ 247,89</p>
       </div>
     </div>
+
+    <p class="text-right text-sm text-gray-500 mt-3 italic">
+      Total de entradas no mês: <span class="text-green-600 font-semibold">R$ 4.247,89</span>
+    </p>
+  </section>
+
+
+
+  </main>
+
+
+
+  <!-- Rodapé com logo maior e centralizada -->
+  <footer class="bg-[#6f42c1] text-gray-100 text-sm text-center py-6 mt-auto">
+    <img src="assets/logo_light.png" alt="Logo Blinq" class="mx-auto h-14 mb-2" />
+    <div class="space-x-4">
+      <a href="#" class="hover:text-white">Sobre</a>
+      <a href="#" class="hover:text-white">Contato</a>
+      <a href="#" class="hover:text-white">Política de Privacidade</a>
+    </div>
+    <p class="mt-2 text-xs">&copy; 2025 Blinq. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
+
 </html>
